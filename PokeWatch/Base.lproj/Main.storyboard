@@ -1,25 +1,153 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PokeWatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="vrI-GL-TUQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fhe-XL-iED"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your pokémon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Sm-Yk-hg2">
+                                <rect key="frame" x="20" y="185" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView tag="1" contentMode="scaleToFill" restorationIdentifier="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sma-0S-vbm">
+                                <rect key="frame" x="437" y="298" width="150" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="94p-Gt-hfR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Gei-32-rSL"/>
+                                    <constraint firstAttribute="width" constant="240" id="dMF-5R-R8c"/>
+                                    <constraint firstAttribute="width" constant="150" id="jWZ-w4-vLh"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dMF-5R-R8c"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="U7l-iU-16G"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fWq-Ep-OXf"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your rival's  pokémon" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmW-MG-ZNN">
+                                <rect key="frame" x="20" y="355" width="221" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="Izn-jt-vqk"/>
+                                    <constraint firstAttribute="width" constant="221" id="WLX-kS-kr0"/>
+                                    <constraint firstAttribute="width" constant="111" id="jUC-eH-27v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jUC-eH-27v"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Jhi-eI-cau">
+                                <rect key="frame" x="20" y="85" width="560" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="r9x-gm-AIN"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="GBC"/>
+                                    <segment title="GBA"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose generation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPk-3R-nh0">
+                                <rect key="frame" x="225" y="56" width="150" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="PhU-gH-Slf"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Z7j-Or-cTo"/>
+                                    <constraint firstAttribute="height" constant="21" id="l7f-aG-USo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjK-P9-1R9">
+                                <rect key="frame" x="257" y="550" width="87" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="CdR-bo-y7B"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="LTd-fe-S06"/>
+                                    <constraint firstAttribute="height" constant="30" id="hWh-dq-ZzY"/>
+                                </constraints>
+                                <state key="normal" title="Update Face"/>
+                                <connections>
+                                    <action selector="sendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qdC-mn-9hZ"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" restorationIdentifier="0" translatesAutoresizingMaskIntoConstraints="NO" id="bsL-d3-XsH">
+                                <rect key="frame" x="430" y="121" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="I0y-xz-T7H"/>
+                                    <constraint firstAttribute="width" constant="150" id="k4Q-Mp-T93"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="7YH-ci-slz"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="tia-MA-vPX"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AmW-MG-ZNN" firstAttribute="top" secondItem="7Sm-Yk-hg2" secondAttribute="bottom" constant="149" id="7Nd-ul-Isq"/>
+                            <constraint firstAttribute="bottom" secondItem="JjK-P9-1R9" secondAttribute="bottom" constant="20" symbolic="YES" id="A0n-tm-yef"/>
+                            <constraint firstItem="AmW-MG-ZNN" firstAttribute="centerY" secondItem="Sma-0S-vbm" secondAttribute="centerY" id="AXa-8C-vw5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Sma-0S-vbm" secondAttribute="trailing" constant="-7" id="CwW-EY-I7z"/>
+                            <constraint firstItem="7Sm-Yk-hg2" firstAttribute="top" secondItem="Jhi-eI-cau" secondAttribute="bottom" constant="72" id="DCr-Us-QmJ"/>
+                            <constraint firstItem="Jhi-eI-cau" firstAttribute="centerX" secondItem="JjK-P9-1R9" secondAttribute="centerX" id="EHm-80-C7C"/>
+                            <constraint firstItem="bsL-d3-XsH" firstAttribute="top" secondItem="Jhi-eI-cau" secondAttribute="bottom" constant="8" symbolic="YES" id="FRY-Yk-b07"/>
+                            <constraint firstItem="7Sm-Yk-hg2" firstAttribute="centerY" secondItem="bsL-d3-XsH" secondAttribute="centerY" id="FUT-DA-J8s"/>
+                            <constraint firstItem="bsL-d3-XsH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JVQ-UB-B2h"/>
+                            <constraint firstItem="Sma-0S-vbm" firstAttribute="top" secondItem="bsL-d3-XsH" secondAttribute="bottom" constant="27" id="PQe-uk-pvG"/>
+                            <constraint firstItem="GPk-3R-nh0" firstAttribute="centerX" secondItem="Jhi-eI-cau" secondAttribute="centerX" id="Qoy-ES-80S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bsL-d3-XsH" secondAttribute="trailing" constant="-7" id="RkY-Mp-hK7"/>
+                            <constraint firstItem="Jhi-eI-cau" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SUp-Sp-qeW"/>
+                            <constraint firstItem="GPk-3R-nh0" firstAttribute="top" secondItem="vrI-GL-TUQ" secondAttribute="bottom" constant="36" id="ZJ8-gx-PAR"/>
+                            <constraint firstItem="bsL-d3-XsH" firstAttribute="trailing" secondItem="Sma-0S-vbm" secondAttribute="trailing" id="a50-so-N9M"/>
+                            <constraint firstItem="bsL-d3-XsH" firstAttribute="leading" secondItem="Sma-0S-vbm" secondAttribute="leading" id="bFG-MT-xSR"/>
+                            <constraint firstItem="Jhi-eI-cau" firstAttribute="top" secondItem="GPk-3R-nh0" secondAttribute="bottom" constant="8" symbolic="YES" id="kov-4B-XJk"/>
+                            <constraint firstItem="7Sm-Yk-hg2" firstAttribute="leading" secondItem="AmW-MG-ZNN" secondAttribute="leading" id="lJE-Co-UA4"/>
+                            <constraint firstItem="Jhi-eI-cau" firstAttribute="leading" secondItem="7Sm-Yk-hg2" secondAttribute="leading" id="li5-dn-HbL"/>
+                            <constraint firstItem="AmW-MG-ZNN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qVl-du-rdl"/>
+                            <constraint firstItem="Jhi-eI-cau" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="use-H8-coz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FUT-DA-J8s"/>
+                                <exclude reference="lJE-Co-UA4"/>
+                                <exclude reference="AXa-8C-vw5"/>
+                                <exclude reference="RkY-Mp-hK7"/>
+                                <exclude reference="a50-so-N9M"/>
+                                <exclude reference="bFG-MT-xSR"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="lblMessage" destination="7Sm-Yk-hg2" id="RTw-PB-Yll"/>
+                        <outlet property="pkv1" destination="bsL-d3-XsH" id="g7i-ug-p6D"/>
+                        <outlet property="pkv2" destination="Sma-0S-vbm" id="v77-gz-ybZ"/>
+                        <outlet property="sgmGeneration" destination="Jhi-eI-cau" id="q25-3d-1za"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="243" y="266"/>
         </scene>
     </scenes>
 </document>

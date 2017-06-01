@@ -7,14 +7,81 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		821274EA1D3FCFDB003D9196 /* pokedb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 821274E91D3FCFDB003D9196 /* pokedb.sqlite */; };
+		821274EB1D3FCFDB003D9196 /* pokedb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 821274E91D3FCFDB003D9196 /* pokedb.sqlite */; };
+		821274EC1D3FCFDB003D9196 /* pokedb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 821274E91D3FCFDB003D9196 /* pokedb.sqlite */; };
+		82883F011D406FDA00AB55E7 /* gbc in Resources */ = {isa = PBXBuildFile; fileRef = 82883F001D406FDA00AB55E7 /* gbc */; };
 		829A91C31D3F14E700C95B35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A91C21D3F14E700C95B35 /* AppDelegate.swift */; };
 		829A91C51D3F14E700C95B35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A91C41D3F14E700C95B35 /* ViewController.swift */; };
-		829A91C81D3F14E700C95B35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829A91C61D3F14E700C95B35 /* Main.storyboard */; };
+		829A91C81D3F14E700C95B35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829A91C61D3F14E700C95B35 /* Main.storyboard */; settings = {ASSET_TAGS = (0, ); }; };
 		829A91CA1D3F14E700C95B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829A91C91D3F14E700C95B35 /* Assets.xcassets */; };
 		829A91CD1D3F14E700C95B35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829A91CB1D3F14E700C95B35 /* LaunchScreen.storyboard */; };
+		829A91DA1D3F1BE600C95B35 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829A91D81D3F1BE600C95B35 /* Interface.storyboard */; };
+		829A91DC1D3F1BE600C95B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829A91DB1D3F1BE600C95B35 /* Assets.xcassets */; };
+		829A91E31D3F1BE600C95B35 /* PokeWatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 829A91E21D3F1BE600C95B35 /* PokeWatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		829A91E81D3F1BE600C95B35 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A91E71D3F1BE600C95B35 /* InterfaceController.swift */; };
+		829A91EA1D3F1BE600C95B35 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A91E91D3F1BE600C95B35 /* ExtensionDelegate.swift */; };
+		829A91EC1D3F1BE600C95B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829A91EB1D3F1BE600C95B35 /* Assets.xcassets */; };
+		829A91F01D3F1BE600C95B35 /* PokeWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 829A91D61D3F1BE500C95B35 /* PokeWatchApp.app */; };
+		829A91FC1D3F220900C95B35 /* pkmnfight2.png in Resources */ = {isa = PBXBuildFile; fileRef = 829A91FB1D3F220900C95B35 /* pkmnfight2.png */; };
+		829A91FD1D3F220900C95B35 /* pkmnfight2.png in Resources */ = {isa = PBXBuildFile; fileRef = 829A91FB1D3F220900C95B35 /* pkmnfight2.png */; };
+		829A91FE1D3F220900C95B35 /* pkmnfight2.png in Resources */ = {isa = PBXBuildFile; fileRef = 829A91FB1D3F220900C95B35 /* pkmnfight2.png */; };
+		829A920C1D3F329000C95B35 /* pkmnfight3.png in Resources */ = {isa = PBXBuildFile; fileRef = 829A920B1D3F329000C95B35 /* pkmnfight3.png */; };
+		829A920D1D3F329000C95B35 /* pkmnfight3.png in Resources */ = {isa = PBXBuildFile; fileRef = 829A920B1D3F329000C95B35 /* pkmnfight3.png */; };
+		829A920E1D3F329000C95B35 /* pkmnfight3.png in Resources */ = {isa = PBXBuildFile; fileRef = 829A920B1D3F329000C95B35 /* pkmnfight3.png */; };
+		829A92131D3F3A8F00C95B35 /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 829A92121D3F3A8F00C95B35 /* DataBase.m */; };
+		829A92141D3F3A8F00C95B35 /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 829A92121D3F3A8F00C95B35 /* DataBase.m */; };
+		829A92171D3F44F400C95B35 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 829A92161D3F44F400C95B35 /* libsqlite3.0.tbd */; };
+		829A92191D3F44FB00C95B35 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 829A92181D3F44FB00C95B35 /* libsqlite3.tbd */; };
+		829A921B1D3F45F200C95B35 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 829A921A1D3F45F200C95B35 /* libsqlite3.tbd */; };
+		829A921D1D3F45F700C95B35 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 829A921C1D3F45F700C95B35 /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		829A91E41D3F1BE600C95B35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 829A91B71D3F14E700C95B35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 829A91E11D3F1BE600C95B35;
+			remoteInfo = "PokeWatchApp Extension";
+		};
+		829A91EE1D3F1BE600C95B35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 829A91B71D3F14E700C95B35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 829A91D51D3F1BE500C95B35;
+			remoteInfo = PokeWatchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		829A91F41D3F1BE600C95B35 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				829A91E31D3F1BE600C95B35 /* PokeWatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		829A91F81D3F1BE600C95B35 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				829A91F01D3F1BE600C95B35 /* PokeWatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		821274E91D3FCFDB003D9196 /* pokedb.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokedb.sqlite; sourceTree = "<group>"; };
+		82883F001D406FDA00AB55E7 /* gbc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gbc; sourceTree = "<group>"; };
 		829A91BF1D3F14E700C95B35 /* PokeWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		829A91C21D3F14E700C95B35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		829A91C41D3F14E700C95B35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +89,25 @@
 		829A91C91D3F14E700C95B35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		829A91CC1D3F14E700C95B35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		829A91CE1D3F14E700C95B35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		829A91D61D3F1BE500C95B35 /* PokeWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		829A91D91D3F1BE600C95B35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		829A91DB1D3F1BE600C95B35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		829A91DD1D3F1BE600C95B35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		829A91E21D3F1BE600C95B35 /* PokeWatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PokeWatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		829A91E71D3F1BE600C95B35 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		829A91E91D3F1BE600C95B35 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		829A91EB1D3F1BE600C95B35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		829A91ED1D3F1BE600C95B35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		829A91FB1D3F220900C95B35 /* pkmnfight2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pkmnfight2.png; sourceTree = "<group>"; };
+		829A920B1D3F329000C95B35 /* pkmnfight3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pkmnfight3.png; sourceTree = "<group>"; };
+		829A920F1D3F3A8E00C95B35 /* PokeWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokeWatch-Bridging-Header.h"; sourceTree = "<group>"; };
+		829A92101D3F3A8E00C95B35 /* PokeWatchApp Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokeWatchApp Extension-Bridging-Header.h"; sourceTree = "<group>"; };
+		829A92111D3F3A8F00C95B35 /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
+		829A92121D3F3A8F00C95B35 /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
+		829A92161D3F44F400C95B35 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		829A92181D3F44FB00C95B35 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		829A921A1D3F45F200C95B35 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.2.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
+		829A921C1D3F45F700C95B35 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.2.sdk/usr/lib/libsqlite3.0.tbd; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +115,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				829A92191D3F44FB00C95B35 /* libsqlite3.tbd in Frameworks */,
+				829A92171D3F44F400C95B35 /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		829A91DF1D3F1BE600C95B35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				829A921D1D3F45F700C95B35 /* libsqlite3.0.tbd in Frameworks */,
+				829A921B1D3F45F200C95B35 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,7 +135,13 @@
 		829A91B61D3F14E700C95B35 = {
 			isa = PBXGroup;
 			children = (
+				829A921C1D3F45F700C95B35 /* libsqlite3.0.tbd */,
+				829A921A1D3F45F200C95B35 /* libsqlite3.tbd */,
+				829A92181D3F44FB00C95B35 /* libsqlite3.tbd */,
+				829A92161D3F44F400C95B35 /* libsqlite3.0.tbd */,
 				829A91C11D3F14E700C95B35 /* PokeWatch */,
+				829A91D71D3F1BE500C95B35 /* PokeWatchApp */,
+				829A91E61D3F1BE600C95B35 /* PokeWatchApp Extension */,
 				829A91C01D3F14E700C95B35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				829A91BF1D3F14E700C95B35 /* PokeWatch.app */,
+				829A91D61D3F1BE500C95B35 /* PokeWatchApp.app */,
+				829A91E21D3F1BE600C95B35 /* PokeWatchApp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +159,51 @@
 		829A91C11D3F14E700C95B35 /* PokeWatch */ = {
 			isa = PBXGroup;
 			children = (
+				821274E91D3FCFDB003D9196 /* pokedb.sqlite */,
+				829A92111D3F3A8F00C95B35 /* DataBase.h */,
+				829A92121D3F3A8F00C95B35 /* DataBase.m */,
 				829A91C21D3F14E700C95B35 /* AppDelegate.swift */,
 				829A91C41D3F14E700C95B35 /* ViewController.swift */,
 				829A91C61D3F14E700C95B35 /* Main.storyboard */,
 				829A91C91D3F14E700C95B35 /* Assets.xcassets */,
+				829A91FA1D3F201F00C95B35 /* sprites */,
 				829A91CB1D3F14E700C95B35 /* LaunchScreen.storyboard */,
 				829A91CE1D3F14E700C95B35 /* Info.plist */,
+				829A920F1D3F3A8E00C95B35 /* PokeWatch-Bridging-Header.h */,
+				829A92101D3F3A8E00C95B35 /* PokeWatchApp Extension-Bridging-Header.h */,
 			);
 			path = PokeWatch;
+			sourceTree = "<group>";
+		};
+		829A91D71D3F1BE500C95B35 /* PokeWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				829A91D81D3F1BE600C95B35 /* Interface.storyboard */,
+				829A91DB1D3F1BE600C95B35 /* Assets.xcassets */,
+				829A91FB1D3F220900C95B35 /* pkmnfight2.png */,
+				829A91DD1D3F1BE600C95B35 /* Info.plist */,
+			);
+			path = PokeWatchApp;
+			sourceTree = "<group>";
+		};
+		829A91E61D3F1BE600C95B35 /* PokeWatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				829A91E71D3F1BE600C95B35 /* InterfaceController.swift */,
+				829A91E91D3F1BE600C95B35 /* ExtensionDelegate.swift */,
+				829A91EB1D3F1BE600C95B35 /* Assets.xcassets */,
+				829A91ED1D3F1BE600C95B35 /* Info.plist */,
+			);
+			path = "PokeWatchApp Extension";
+			sourceTree = "<group>";
+		};
+		829A91FA1D3F201F00C95B35 /* sprites */ = {
+			isa = PBXGroup;
+			children = (
+				82883F001D406FDA00AB55E7 /* gbc */,
+				829A920B1D3F329000C95B35 /* pkmnfight3.png */,
+			);
+			name = sprites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +216,51 @@
 				829A91BB1D3F14E700C95B35 /* Sources */,
 				829A91BC1D3F14E700C95B35 /* Frameworks */,
 				829A91BD1D3F14E700C95B35 /* Resources */,
+				829A91F81D3F1BE600C95B35 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				829A91EF1D3F1BE600C95B35 /* PBXTargetDependency */,
 			);
 			name = PokeWatch;
 			productName = PokeWatch;
 			productReference = 829A91BF1D3F14E700C95B35 /* PokeWatch.app */;
 			productType = "com.apple.product-type.application";
+		};
+		829A91D51D3F1BE500C95B35 /* PokeWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 829A91F51D3F1BE600C95B35 /* Build configuration list for PBXNativeTarget "PokeWatchApp" */;
+			buildPhases = (
+				829A91D41D3F1BE500C95B35 /* Resources */,
+				829A91F41D3F1BE600C95B35 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				829A91E51D3F1BE600C95B35 /* PBXTargetDependency */,
+			);
+			name = PokeWatchApp;
+			productName = PokeWatchApp;
+			productReference = 829A91D61D3F1BE500C95B35 /* PokeWatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		829A91E11D3F1BE600C95B35 /* PokeWatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 829A91F11D3F1BE600C95B35 /* Build configuration list for PBXNativeTarget "PokeWatchApp Extension" */;
+			buildPhases = (
+				829A91DE1D3F1BE600C95B35 /* Sources */,
+				829A91DF1D3F1BE600C95B35 /* Frameworks */,
+				829A91E01D3F1BE600C95B35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PokeWatchApp Extension";
+			productName = "PokeWatchApp Extension";
+			productReference = 829A91E21D3F1BE600C95B35 /* PokeWatchApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -90,11 +268,21 @@
 		829A91B71D3F14E700C95B35 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					0,
+					1,
+				);
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Marco Vergaray Guerra";
 				TargetAttributes = {
 					829A91BE1D3F14E700C95B35 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					829A91D51D3F1BE500C95B35 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					829A91E11D3F1BE600C95B35 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -113,6 +301,8 @@
 			projectRoot = "";
 			targets = (
 				829A91BE1D3F14E700C95B35 /* PokeWatch */,
+				829A91D51D3F1BE500C95B35 /* PokeWatchApp */,
+				829A91E11D3F1BE600C95B35 /* PokeWatchApp Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -123,8 +313,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				829A91CD1D3F14E700C95B35 /* LaunchScreen.storyboard in Resources */,
+				82883F011D406FDA00AB55E7 /* gbc in Resources */,
+				821274EA1D3FCFDB003D9196 /* pokedb.sqlite in Resources */,
 				829A91CA1D3F14E700C95B35 /* Assets.xcassets in Resources */,
+				829A920C1D3F329000C95B35 /* pkmnfight3.png in Resources */,
 				829A91C81D3F14E700C95B35 /* Main.storyboard in Resources */,
+				829A91FC1D3F220900C95B35 /* pkmnfight2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		829A91D41D3F1BE500C95B35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				829A91FD1D3F220900C95B35 /* pkmnfight2.png in Resources */,
+				829A91DC1D3F1BE600C95B35 /* Assets.xcassets in Resources */,
+				829A91DA1D3F1BE600C95B35 /* Interface.storyboard in Resources */,
+				821274EB1D3FCFDB003D9196 /* pokedb.sqlite in Resources */,
+				829A920D1D3F329000C95B35 /* pkmnfight3.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		829A91E01D3F1BE600C95B35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				821274EC1D3FCFDB003D9196 /* pokedb.sqlite in Resources */,
+				829A920E1D3F329000C95B35 /* pkmnfight3.png in Resources */,
+				829A91EC1D3F1BE600C95B35 /* Assets.xcassets in Resources */,
+				829A91FE1D3F220900C95B35 /* pkmnfight2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,10 +354,34 @@
 			files = (
 				829A91C51D3F14E700C95B35 /* ViewController.swift in Sources */,
 				829A91C31D3F14E700C95B35 /* AppDelegate.swift in Sources */,
+				829A92131D3F3A8F00C95B35 /* DataBase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		829A91DE1D3F1BE600C95B35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				829A91EA1D3F1BE600C95B35 /* ExtensionDelegate.swift in Sources */,
+				829A91E81D3F1BE600C95B35 /* InterfaceController.swift in Sources */,
+				829A92141D3F3A8F00C95B35 /* DataBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		829A91E51D3F1BE600C95B35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 829A91E11D3F1BE600C95B35 /* PokeWatchApp Extension */;
+			targetProxy = 829A91E41D3F1BE600C95B35 /* PBXContainerItemProxy */;
+		};
+		829A91EF1D3F1BE600C95B35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 829A91D51D3F1BE500C95B35 /* PokeWatchApp */;
+			targetProxy = 829A91EE1D3F1BE600C95B35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		829A91C61D3F14E700C95B35 /* Main.storyboard */ = {
@@ -157,6 +398,14 @@
 				829A91CC1D3F14E700C95B35 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		829A91D81D3F1BE600C95B35 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				829A91D91D3F1BE600C95B35 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -249,10 +498,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PokeWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mvg.PokeWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokeWatch/PokeWatch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -260,10 +512,77 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PokeWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mvg.PokeWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokeWatch/PokeWatch-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		829A91F21D3F1BE600C95B35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "PokeWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mvg.PokeWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PokeWatch/PokeWatchApp Extension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		829A91F31D3F1BE600C95B35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "PokeWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mvg.PokeWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PokeWatch/PokeWatchApp Extension-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		829A91F61D3F1BE600C95B35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PokeWatchApp_Extension;
+				INFOPLIST_FILE = PokeWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mvg.PokeWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		829A91F71D3F1BE600C95B35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PokeWatchApp_Extension;
+				INFOPLIST_FILE = PokeWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mvg.PokeWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
 		};
@@ -286,6 +605,25 @@
 				829A91D31D3F14E700C95B35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		829A91F11D3F1BE600C95B35 /* Build configuration list for PBXNativeTarget "PokeWatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				829A91F21D3F1BE600C95B35 /* Debug */,
+				829A91F31D3F1BE600C95B35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		829A91F51D3F1BE600C95B35 /* Build configuration list for PBXNativeTarget "PokeWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				829A91F61D3F1BE600C95B35 /* Debug */,
+				829A91F71D3F1BE600C95B35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

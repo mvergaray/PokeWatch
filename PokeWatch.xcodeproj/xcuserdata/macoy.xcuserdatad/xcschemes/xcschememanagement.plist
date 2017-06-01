@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PokeWatchApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>829A91BE1D3F14E700C95B35</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>829A91D51D3F1BE500C95B35</key>
 		<dict>
 			<key>primary</key>
 			<true/>
